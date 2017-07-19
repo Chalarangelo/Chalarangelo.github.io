@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<link rel="stylesheet" href="https://cdn.rawgit.com/Chalarangelo/mini.css/v2.1.0/dist/mini-default.min.css"/>
+	<link rel="stylesheet" href="https://cdn.rawgit.com/Chalarangelo/mini.css/v2.3.3/dist/mini-default.min.css"/>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
 	<title>Angelos Chalaris (chalarangelo)</title>
 	<meta charset="utf-8"/>
@@ -11,31 +11,50 @@
 	<meta property="og:title" content="Angelos Chalaris (chalarangelo)"/>
 	<meta property="og:type" content="website"/>
 	<meta property="og:description" content="Angelos Chalaris (chalarangelo) is a web developer from Greece."/>
+  <style>a.button.github-button{background: #fafafa; color: rgba(12,12,12,0.9);}
+  a.button.github-button:hover,a.button.github-button:focus{color: #0c0c0c;}
+  a.button.hidden-sm-c { display: none}
+  header.sticky.row .col-sm {text-align:right;}
+  @media screen and (min-width: 768px){ header.sticky.row .col-sm {text-align:left;} }
+  @media screen and (min-width: 768px) { a.button.hidden-sm-c { display: inline-block } }
+  @media screen and (min-width: 768px) { .drawer-toggle:not(.persistent) { display: none; } }
+  </style>
 </head>
 
 <body>
-	<header class="sticky" class="row">
+	<header class="sticky row">
 		<div class="col-sm col-lg col-lg-offset-1">
-			<a href="#home" class="button">Home</a>
-			<a href="#education" class="button">Education</a>
-			<a href="#projects" class="button">Open Source</a>
-			<a href="#community" class="button">Community Contributions</a>
-			<a href="#home" class="button">Blog</a>
+			<a href="#home" class="button hidden-sm-c">Home</a>
+			<a href="#education" class="button hidden-sm-c">Education</a>
+			<a href="#projects" class="button hidden-sm-c">Open Source</a>
+			<a href="#articles" class="button hidden-sm-c">Writing</a>
+			<a href="#community" class="button hidden-sm-c">Community</a>
+      <label for="drawer-checkbox" class="button drawer-toggle"></label>
 		</div>
 	</header>
+  <input type="checkbox" id="drawer-checkbox">
+  <nav class="drawer right hidden-md hidden-lg">
+    <label for="drawer-checkbox" class="close"></label>
+    <a href="#">Home</a>
+    <a href="#education">Education</a>
+    <a href="#projects">Open Source</a>
+    <a href="#articles">Writing</a>
+    <a href="#community">Community</a>
+  </nav>
 	<br id="home"/>
 	<div class="container">
-		<div class="row">
+		<div class="row" style="padding: 1.5rem;">
 			<div class="col-sm-12 col-md-3 col-lg-2 col-lg-offset-1">
 				<img src="https://avatars1.githubusercontent.com/u/8281875?v=3&s=460" id="profile-picture" style="width:200px" class="rounded" />
 			</div>
 			<div class="col-sm-12 col-md-9 col-lg-8">
 				<br/>
 				<h1>Angelos Chalaris<small>Web developer</small></h1>
-				<a href="mailto:chalarangelo@gmail.com" class="button primary circular" style="width: 50px; height: 50px; box-sizing: border-box; text-align: center;"><i class="fa fa-envelope fa-fw fa-lg" aria-hidden="true" style="vertical-align: bottom"></i></a>
-				<a href="https://github.com/Chalarangelo" class="button secondary circular" style="width: 50px; height: 50px; box-sizing: border-box; text-align: center;"><i class="fa fa-github fa-fw fa-lg" aria-hidden="true" style="vertical-align: bottom"></i></a>
-				<a href="https://stackoverflow.com/users/1650200/angelos-chalaris?tab=profile" class="button tertiary circular" style="width: 50px; height: 50px; box-sizing: border-box; text-align: center;"><i class="fa fa-stack-overflow fa-fw fa-lg" aria-hidden="true" style="vertical-align: bottom"></i></a>
-				<a href="https://codepen.io/chalarangelo" class="button inverse circular" style="width: 50px; height: 50px; box-sizing: border-box; text-align: center;"><i class="fa fa-codepen fa-fw fa-lg" aria-hidden="true" style="vertical-align: bottom"></i></a>
+				<a href="mailto:chalarangelo@gmail.com" class="button inverse circular" style="width: 50px; height: 50px; box-sizing: border-box; text-align: center; color: #f44336;"><i class="fa fa-envelope-o fa-fw fa-lg" aria-hidden="true" style="vertical-align: top; font-size: 1.5em; margin-left: -2px; line-height: 1.35;"></i></a>
+        <a href="https://github.com/Chalarangelo" class="button circular github-button" style="width: 50px; height: 50px; box-sizing: border-box; text-align: center;"><i class="fa fa-github fa-fw fa-lg" aria-hidden="true" style="vertical-align: top; font-size: 3.75em; margin-left: -25.25px; margin-top: -12.5px; line-height: 1;"></i></a>
+				<a href="https://stackoverflow.com/users/1650200/angelos-chalaris?tab=profile" class="button inverse circular" style="width: 50px; height: 50px; box-sizing: border-box; text-align: center; color: #ff8f00;"><i class="fa fa-stack-overflow fa-fw fa-lg" aria-hidden="true" style="vertical-align: bottom; font-size: 1.5em; margin-left: -2px;"></i></a>
+				<a href="https://codepen.io/chalarangelo" class="button inverse circular" style="width: 50px; height: 50px; box-sizing: border-box; text-align: center;"><i class="fa fa-codepen fa-fw fa-lg" aria-hidden="true" style="vertical-align: top; font-size: 1.5em; margin-left: -2px; line-height: 1.5;"></i></a>
+        <a href="https://medium.com/@chalarangelo" class="button inverse circular" style="width: 50px; height: 50px; box-sizing: border-box; text-align: center; color: #00c853;"><i class="fa fa-medium fa-fw fa-lg" aria-hidden="true" style="vertical-align: bottom"></i></a>
 			</div>
 		</div>
 
@@ -76,6 +95,7 @@
 					<li>HTML &amp; CSS (June, 2016)</li>
 					<li>Learn ReactJS: Part I (March, 2017)</li>
 					<li>Learn ReactJS: Part II (March, 2017)</li>
+          <li>PHP (May, 2017)</li>
 				</ul>
 				<br/><hr/>
 			</div>
@@ -86,7 +106,19 @@
 				<br/>
 				<h2 id="projects">Projects &amp; Open Source</h2>
 				<h3>mini.css<small>CSS, Sass</small></h3>
-				<p><strong><a href="https://chalarangelo.github.io/mini.css/index.html">mini.css</a></strong> is one of my most ambitious projects, providing a minimal, responsive and easily customizable alternative to popular CSS frameworks like Bootstrap and Semantic UI. It utilizes modern technologies, techniques and design patterns, such as the Flexbox module and material design, while it's written in SCSS without the need for any Javascript code. It runs on most modern browsers and is actively maintained.</p>
+				<p><strong><a href="http://minicss.org">mini.css</a></strong> is one of my most ambitious projects, providing a minimal, responsive and easily customizable alternative to popular CSS frameworks like Bootstrap and Semantic UI. It utilizes modern technologies, techniques and design patterns, such as the Flexbox module and material design, while it's written in SCSS without the need for any Javascript code. It runs on most modern browsers and is actively maintained and updated frequently.</p>
+				<br/>
+        <h3>mini.css React &amp; Preact Libraries<small>Javascript, React, Preact</small></h3>
+				<p>These two <strong><a href="https://chalarangelo.github.io/react-mini.css/">component libraries</a></strong> serve as an extension of my CSS framework, mini.css, utilizing two different Javascript libraries (React and Preact respectively). Both libraries are tested and thoroughly documented, while their components can also be used independently, allowing for greater flexibility. Both libraries are actively maintained.</p>
+				<br/>
+        <h3>mocka<small>CSS, Sass</small></h3>
+				<p>I built the <strong><a href="https://chalarangelo.github.io/mocka/">mocka placeholder</a></strong> to be a very simple, yet elegant content placeholder, used to enhance user experience when a page is loading. Crafted with customization in mind, it is written in SCSS and can be altered really easily to accommodate any and all needs. It runs on all browsers and is actively maintained.</p>
+				<br/>
+        <h3>Progressive Web App Mockup<small>Javascript, HTML, React, PWA</small></h3>
+				<p>A fully-featured <strong><a href="https://chalarangelo.github.io/mock-pwa/">progressive web app mockup</a></strong> , built as part of an <a href="https://hackernoon.com/a-beginners-guide-to-progressive-web-apps-the-frontend-web-424b6d697e35">extensive tutorial article</a> I wrote for Hackernoon on Medium. This web application features a custom-tailored material flavor of my CSS framework, mini.css, as well as various online resources and APIs to showcase the capabilities and workflow of progressive web apps. It utilizes service workers and offline caching to deliver an optimized user experience, while it can also be installed locally. The project is actively maintained and I am planning to revisit it in the future with more tutorial articles and functionality extensions.</p>
+				<br/>
+        <h3>CodeIgniter RAP<small>PHP, CodeIgniter</small></h3>
+				<p><strong><a href="https://chalarangelo.github.io/codeigniter-rap/">CodeIgniter RAP</a></strong> is made up of multiple helper functions that can be used to create RESTful APIs using PHP. While built for CodeIgniter, these helper functions are not dependent on it, allowing it to be used with other frameworks. The project has been tested thoroughly and used on various college projects, while it's being actively maintained.</p>
 				<br/>
 				<h3>HTML5 Template Generator<small>HTML, Javascript, jQuery</small></h3>
 				<p>I built <strong><a href="https://chalarangelo.github.io/htmltemplategenerator/">HTML5 Template Generator</a></strong> as a replacement tool for all the boilerplates available online, so that anyone can quickly and easily create a simple HTML5-compliant page, without having to go through all the boring stuff. It supports exporting the templates to Codepen and JSFiddle, as well as defining a plethora of properties and generating certain framework boilerplates. The project is not actively maintained anymore.</p>
@@ -100,9 +132,26 @@
 					<li>A progressive web app boilerplate, <strong><a href="https://github.com/Chalarangelo/pwapp-demo">Progressive Web App Demo</a></strong> serves as a starting point for developing progressive web apps.</li>
 					<li><strong><a href="https://github.com/Chalarangelo/reactor">Reactor</a></strong> is a simple set of Bash/Batch scripts that easily setup a ReactJS application in any system, so that you can start creating your ReactJS project immediately, without setting up dependencies and the like.</li>
 					<li><strong><a href="https://github.com/Chalarangelo/parse-md-js">Parse-MD.js</a></strong> is a simple Markdown parser that uses regular expressions and functional Javascript. It's tiny (about 100 lines of code) and can be easily extended and customized to include custom rules.</li>
+          <li><strong><a href="https://gist.github.com/Chalarangelo/576773ef989ff9229f2befde57c82043">brainsource.js</a></strong> is a simple Regex-based brainf**k interpreter, written in functional Javascript.</li>
+					<li><strong><a href="https://github.com/Chalarangelo/multisort">Multisort</a></strong> is a silly hybrid sorting algorithm in Python, which utilizes multiple sorting algorithms to sort a list of numbers.</li>
 				</ul>
 				<br/>
 				<br/><hr/>
+			</div>
+		</div>
+
+    <div class="row">
+			<div class="col-sm col-lg-10 col-lg-offset-1">
+				<br/>
+				<h2 id="articles">Writing</h2>
+				<p>I have been writing on Medium for a while, covering various programming topics, mostly focused around web development and design. I am currently a Writer for the Hackernoon and FreeCodeCamp publications. Some of my most recommended stories include:</p>
+        <ul>
+          <li><a href="https://hackernoon.com/a-beginners-guide-to-progressive-web-apps-the-frontend-web-424b6d697e35">A Beginner’s Guide to Progressive Web Apps &amp; the Frontend Web</a></li>
+          <li><a href="https://hackernoon.com/5-reasons-to-try-out-mini-css-62ddb47b9370">5 reasons to try out mini.css</a></li>
+          <li><a href="https://hackernoon.com/designing-a-simple-web-page-with-mini-css-f455e9f6403b">Designing a simple web page with mini.css</a></li>
+        </ul>
+				<br/>
+        <br/><hr/>
 			</div>
 		</div>
 
